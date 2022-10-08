@@ -1,0 +1,44 @@
+.feedback
+	padding: 85px 0 100px
+
+	&__title
+		margin-bottom: 80px
+
+	&__content
+		margin-bottom: 80px
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		gap: 100px
+
+	&__inner
+		text-align: right
+
+	&__name
+		position: relative
+		margin: 0
+		margin-bottom: 35px
+		line-height: 42px
+		font-weight: 700
+		font-size: 40px
+		&::before
+			position: absolute
+			content: ''
+			bottom: -20px
+			right: 0
+			width: 55px
+			height: 2px
+			background-color: $black
+
+	&__text
+		margin: 0
+		max-width: 470px
+		color: $text-color
+
+.feedback-gallery
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	&__image
+		max-width: 266px

@@ -1,0 +1,43 @@
+.team
+	padding: 100px 0
+	background-color: $bg-color
+
+	&__title
+		margin-bottom: 100px
+
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+.worker
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	max-width: 170px
+	text-align: center
+
+	&__avatar
+		margin-bottom: 20px
+		max-width: 168px
+
+		img
+			border-radius: 100%
+
+	&__name
+		position: relative
+		margin: 0
+		margin-bottom: 30px
+		font-size: 40px
+		font-weight: 700
+
+		&::before
+			position: absolute
+			content: ''
+			bottom: -10px
+			right: 50%
+			transform: translateX(50%)
+			width: 55px
+			height: 2px
+			background-color: $black
