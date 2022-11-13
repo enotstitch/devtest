@@ -1,0 +1,27 @@
+.work
+	padding-bottom: 50px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+	&__title
+		margin-bottom: 100px
+
+	&__wrap
+		margin-bottom: 50px
+		display: grid
+		gap: 30px
+		grid-template-columns: repeat(3, 1fr)
+		grid-auto-rows: minmax(364px, auto)
+
+	&__item
+		align-self: flex-end
+		max-width: 364px
+		min-height: 364px
+
+		&:nth-child(2)
+			margin-bottom: -225px
+
+		&--long
+			min-height: 590px
